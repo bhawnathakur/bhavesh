@@ -8,6 +8,6 @@ export class ContactComponent{
    
     onSubmit(){
 
-        console.log()
+        console.log("posted")
     }
 }

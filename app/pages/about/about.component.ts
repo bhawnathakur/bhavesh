@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
     <h2>About Cats</h2>
     <p>List of cats</p>`
 })
+
 export class AboutComponent{
     
 }

@@ -1,31 +1,35 @@
 <div class="app">
       
       <div class="container">
+        <div class="row">
           <div id="header">
               
       <nav id="navmain">
         <ul id="nav">
           <li>
-          <a routerLink="/" routerLinkActive="active">Home</a>
+          <a routerLink="/" routerLinkActive="active" >Home</a>
           </li>
            <li>
-          <a routerLink="/about"  >About Us</a>
+          <a routerLink="/about" routerLinkActive="active" >About Us</a>
           </li>
              <li>
-          <a routerLink="/services"  >Services</a>
+          <a routerLink="/services" routerLinkActive="active" >Services</a>
           </li>
               <li>
-          <a routerLink="/calculators"  >Calculators</a>
+          <a routerLink="/calculators"  routerLinkActive="active">Calculators</a>
           </li>
             <li>
-          <a routerLink="contact"  >Contact Us</a>
+          <a routerLink="contact"  routerLinkActive="active">Contact Us</a>
           </li>
+           
         </ul>
       </nav>
-          </div>
-      <main>
-          <h1>{{title}}</h1>
-        <router-outlet></router-outlet>
-      </main>
       </div>
+      <main>
+       
+        <router-outlet></router-outlet>
+      
+      </main>
+      
     </div>
+       </div>

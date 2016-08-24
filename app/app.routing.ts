@@ -4,6 +4,7 @@ import {AboutComponent} from './pages/about/about.component';
 import {ServicesComponent} from './pages/services/services.component';
 import {CalculatorsComponent} from './pages/calculators/calculators.component';
 import {ContactComponent} from './pages/contact/contact.component';
+
 const appRoutes: Routes = [
  
   {
@@ -41,8 +42,7 @@ const appRoutes: Routes = [
       title: 'Contact Us'
     }
   },
-  
- 
+
 ];
 export const appRoutingProviders: any[] = [
 

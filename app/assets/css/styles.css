@@ -1,9 +1,9 @@
 
 /** ./style.css **/
 /* Jumbotron */
-body{ background-color:#BF1D20
+body{ background-color:#20202f;
 }
-main{ background-color:#FF00FF;
+main{ background-color:#F0f0e1;
 padding :30px 15px 15px 15px;
 min-height:800px;
 
@@ -41,10 +41,23 @@ min-height:800px;
 #nav  li a:hover {
     background-color: #111;
 }
+#nav  li a:hover {
+    background-color: #111;
+}
 
+#nav  li  a:active, a:visited, a:focus {
+     background-color: #4CAF50;
+    color: white;
+}
 
 /* Content Wrapper */
 .container{
   width: 98%;
   margin: 0 auto;
+}
+#login{
+float:right;
+margin-right:10%;
+font-size:24px;
+color: #FFFFFF;
 }
