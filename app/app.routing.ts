@@ -4,7 +4,8 @@ import {AboutComponent} from './pages/about/about.component';
 import {ServicesComponent} from './pages/services/services.component';
 import {CalculatorsComponent} from './pages/calculators/calculators.component';
 import {ContactComponent} from './pages/contact/contact.component';
-
+import {RegisterComponent} from './pages/register/register.component';
+import {LoginComponent} from './pages/login/login.component';
 const appRoutes: Routes = [
  
   {
@@ -35,13 +36,28 @@ const appRoutes: Routes = [
       title: 'Calculators'
     }
   },
+  {
+    path: 'login',
+    component: LoginComponent,
+    data: {
+      title: 'Calculators'
+    }
+  },
+  {
+    path: 'register',
+    component: RegisterComponent,
+    data: {
+      title: 'Calculators'
+    }
+  },
     {
     path: 'contact',
     component: ContactComponent,
     data: {
-      title: 'Contact Us'
+      title: 'Calculators'
     }
   },
+  
 
 ];
 export const appRoutingProviders: any[] = [

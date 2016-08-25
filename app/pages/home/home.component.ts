@@ -1,10 +1,8 @@
 import {Component} from '@angular/core';
 @Component({
+    moduleId: module.id,
 selector:'home',
-template:`
-    <h2>Home of Cats</h2>
-    <p>List of cats</p>`
-
+templateUrl:'home.component.html'
 
 })
 
