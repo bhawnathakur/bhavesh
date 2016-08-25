@@ -10,7 +10,7 @@ import {CalculatorsComponent} from './pages/calculators/calculators.component';
 import {ContactComponent} from './pages/contact/contact.component';
 import {RegisterComponent} from './pages/register/register.component';
 import {LoginComponent} from './pages/login/login.component';
-
+import {HTTP_PROVIDERS} from           '@angular/http';
 
 
 import { routing,appRoutingProviders } from './app.routing';
@@ -25,7 +25,7 @@ import { routing,appRoutingProviders } from './app.routing';
   declarations: [AppComponent,HomeComponent,ContactComponent,ServicesComponent,AboutComponent,LoginComponent
  ,CalculatorsComponent,RegisterComponent ],
   providers: [
-    appRoutingProviders
+    appRoutingProviders,HTTP_PROVIDERS
   ],
   bootstrap: [ AppComponent ]
 })
