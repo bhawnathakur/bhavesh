@@ -6,6 +6,11 @@ import {CalculatorsComponent} from './pages/calculators/calculators.component';
 import {ContactComponent} from './pages/contact/contact.component';
 import {RegisterComponent} from './pages/register/register.component';
 import {LoginComponent} from './pages/login/login.component';
+import {HTTPTestComponent} from './pages/httpTest/http-test.component';
+import {SigninComponent} from './pages/register/signin.component';
+import {SignupComponent} from './pages/register/signup.component';
+import {AccountComponent} from './pages/createAccount/Account.component';
+import { AboutComponent1, AboutHomeComponent, AboutItemComponent } from './about.component';
 const appRoutes: Routes = [
  
   {
@@ -22,6 +27,7 @@ const appRoutes: Routes = [
       title: 'About'
     }
   },
+  
     {
     path: 'services',
     component: ServicesComponent,
@@ -46,9 +52,10 @@ const appRoutes: Routes = [
   {
     path: 'register',
     component: RegisterComponent,
-    data: {
-      title: 'Calculators'
-    }
+    children: [
+      { path: 'signin', component: SigninComponent}, // url: about/
+      { path: 'signup', component: SignupComponent } // url: about/item
+    ]
   },
     {
     path: 'contact',
@@ -57,9 +64,30 @@ const appRoutes: Routes = [
       title: 'Calculators'
     }
   },
+  {
+    path: 'account',
+    component: AccountComponent,
+    data: {
+      title: 'Account'
+    }
+  },
+  {
+    path: 'test',
+    component: HTTPTestComponent,
+    data: {
+      title: 'Calculators'
+    }
+  },
   
-
-];
+{
+    path: 'register',
+    component: RegisterComponent,
+    children: [
+     { path: '', component: SignupComponent},
+      { path: 'signin', component: SigninComponent}, 
+      { path: 'signup', component: SigninComponent } 
+    ]
+  }]
 export const appRoutingProviders: any[] = [
 
 ];

@@ -1,7 +1,7 @@
 import{Injectable} from '@angular/core';
 import{Http,Headers} from '@angular/http';
 import{Message} from './message.model';
-
+import 'rxjs/add/operator/map';
 @Injectable()
 export class MessageService {
 constructor(private http:Http){}

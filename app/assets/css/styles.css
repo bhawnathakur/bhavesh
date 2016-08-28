@@ -1,7 +1,7 @@
 
 /** ./style.css **/
 /* Jumbotron */
-body{ background-color:#20202f;
+body{ background-color:#20202f;padding: 20px; margin: 20px;font-size: 16px;
 }
 main{ background-color:#F0f0e1;
 padding :30px 15px 15px 15px;
@@ -22,6 +22,7 @@ min-height:800px;
     background-color: #333;
 	
 }
+.validation-error{color:#f00;}
 
 
 
@@ -52,7 +53,7 @@ min-height:800px;
 
 /* Content Wrapper */
 .containerMain{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 #login{
@@ -61,3 +62,6 @@ margin-right:10%;
 font-size:24px;
 color: #FFFFFF;
 }
+#accountForm input{width:300px;font-size: inherit}
+#accountForm button{width:200px; margin: 15px 0;border-radius: 3px;background-color:#eee;cursor: pointer;font-size: inherit }
+accountForm button:disabled{background-color:#bbb; }

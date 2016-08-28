@@ -11,10 +11,13 @@ import {ContactComponent} from './pages/contact/contact.component';
 import {RegisterComponent} from './pages/register/register.component';
 import {LoginComponent} from './pages/login/login.component';
 import {HTTP_PROVIDERS} from           '@angular/http';
+import {SigninComponent} from './pages/register/signin.component';
+import {SignupComponent} from './pages/register/signup.component';
 
-
+import {HTTPTestComponent} from './pages/httpTest/http-test.component';
 import { routing,appRoutingProviders } from './app.routing';
-
+import {registerRouting} from './pages/register/register.routing'
+import {AccountComponent} from './pages/createAccount/Account.component';
 
 @NgModule({
   imports: [
@@ -23,7 +26,7 @@ import { routing,appRoutingProviders } from './app.routing';
     routing
   ],
   declarations: [AppComponent,HomeComponent,ContactComponent,ServicesComponent,AboutComponent,LoginComponent
- ,CalculatorsComponent,RegisterComponent ],
+ ,CalculatorsComponent,HTTPTestComponent,SigninComponent,RegisterComponent,SignupComponent,AccountComponent ],
   providers: [
     appRoutingProviders,HTTP_PROVIDERS
   ],
